@@ -1,0 +1,79 @@
+.container {
+  width: 700px;
+  height:50vh;
+  margin: 150px auto 0;
+  padding: 1rem;
+  background-color: #fff; 
+  border-radius: 10px;
+  box-shadow:
+  0 1px 4px rgba(0, 0, 0, .3),
+  -23px 0 20px -23px rgba(0, 0, 0, .8),
+  23px 0 20px -23px rgba(0, 0, 0, .8),
+  0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+.card {
+  padding: 1rem;
+  margin: 60px auto 0;
+  width: 100%;
+  max-width: 400px;
+}
+.login {
+  text-align: center;
+}
+.form-control {
+  display: block;
+  margin-top: 0.3rem;
+  margin-bottom: .5rem;
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 7px;
+    margin-bottom: 1rem;
+    font-size: 1em;
+    line-height: 1.65;
+    outline: none;
+    color: black;
+    &.ng-invalid.ng-touched {
+      border: 2px solid red;
+    }
+    &.ng-valid.ng-touched {
+      border: 2px solid green;
+    }
+  }
+
+  .validation {
+    color: red;
+  }
+}
+
+.btn {
+  display: inline-block;
+  background: #5666ba;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-left: 150px;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  
+  &:disabled {
+    background: #ccc;
+    color: #000;
+    cursor: not-allowed;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}

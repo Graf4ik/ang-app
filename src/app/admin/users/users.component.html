@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="input-field">
+        <input placeholder="Search username" id="searchUsers" type="text" class="input" [(ngModel)]="searchStr">
+        <label for="searchUsers"></label>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>username</th>
+                <th>first_name</th>
+                <th>last_name</th>
+                <th>is_active</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users | search: searchStr | orderBy: 'id' ">
+                <td>{{user.id}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.first_name}}</td>
+                <td>{{user.last_name}}</td>
+                <td>{{user.is_active}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
