@@ -25,7 +25,7 @@ export class TokenInterceptor implements HttpInterceptor {
         return next.handle(req)
         .pipe(
             tap(()=> {
-                console.log('Intercept', req)
+                console.log('Intercept')
             }),
             catchError((error: HttpErrorResponse) => {
                 console.log('[Interceptor Error]', error)

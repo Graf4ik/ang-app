@@ -1,15 +1,14 @@
+<nav class="navbar main">
+  <ul>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/admin', 'users']">Главная</a>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <a href="#" (click)="logout($event)">Выйти</a>
+    </li>
+  </ul>
+</nav>
 
-    <nav class="navbar main">
-      <ul>
-        <li routerLinkActive="active">
-          <a [routerLink]="['/admin', 'users']">Главная</a>
-        </li>
-        <li>
-          <a href="#" (click)="logout($event)">Выйти</a>
-        </li>
-      </ul>
-    </nav>
-    
-    <div class="container">
-      <router-outlet></router-outlet>
-    </div>
+<router-outlet></router-outlet>

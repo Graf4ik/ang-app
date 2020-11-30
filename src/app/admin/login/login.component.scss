@@ -77,3 +77,21 @@
     opacity: 0.8;
   }
 }
+
+@media (max-width: 750px) {
+  .container {
+    width: 400px;
+  }
+  .btn {
+    margin-left: 120px;
+}
+}
+@media (max-width: 400px) {
+  .container {
+    width: 350px;
+    height:45vh;
+  }
+  .btn {
+    margin-left: 120px;
+}
+}
